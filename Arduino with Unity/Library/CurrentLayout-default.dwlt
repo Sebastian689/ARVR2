@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: Hierarchy
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 342}
   m_MaxSize: {x: 12004, y: 8042}
   vertical: 0
-  controlID: 67
+  controlID: 83
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -150,7 +150,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 342}
   m_MaxSize: {x: 8003, y: 8042}
   vertical: 1
-  controlID: 21
+  controlID: 37
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 22
+  controlID: 38
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -343,39 +343,38 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Packages/com.unity.xr.arfoundation/Runtime/AR
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets
+  - Packages/com.unity.xr.arfoundation/Runtime/AR
   m_LastFoldersGridSize: 16
-  m_LastProjectPath: C:\Users\mathi\Desktop\SDU\5. Semester\AR VR 2\Arduino with
-    Unity
+  m_LastProjectPath: C:\Users\Sebastian\Desktop\ARVR2\Arduino with Unity
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 743d0000
-    m_LastClickedID: 15732
-    m_ExpandedIDs: 00000000023e0000043e0000063e0000
+    scrollPos: {x: 0, y: 104}
+    m_SelectedIDs: 144d0000
+    m_LastClickedID: 19732
+    m_ExpandedIDs: 00000000fe3d0000003e0000023e0000be4c0000044d000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Ardity
+      m_OriginalName: Ardity
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 15872
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 5}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -387,7 +386,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000023e0000043e0000063e0000
+    m_ExpandedIDs: 00000000fe3d0000003e0000023e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -412,9 +411,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: acf9ffff
-    m_LastClickedInstanceID: -1620
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: d4e6ffff
+    m_LastClickedInstanceID: -6444
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -510,21 +509,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 6efbffff
+      m_ExpandedIDs: d4e6ffffc8faffff6efbffff543e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: AR Camera
+        m_OriginalName: AR Camera
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -6450
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 4
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 2}
       m_SearchString: 
@@ -570,9 +569,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1288.9574, y: 635.3672, z: 173.18457}
+    m_Target: {x: -0.3263668, y: 0.27552578, z: 0.8343427}
     speed: 2
-    m_Value: {x: 1288.9574, y: 635.3672, z: 173.18457}
+    m_Value: {x: -0.3263668, y: 0.27552578, z: 0.8343427}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -619,13 +618,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.003307387, y: 0.037486155, z: -0.00012400368, w: 0.99929315}
+    m_Target: {x: -0.0056805303, y: -0.058470648, z: -0.00033265442, w: 0.9982741}
     speed: 2
-    m_Value: {x: -0.003307387, y: -0.037486155, z: 0.00012400368, w: -0.9992932}
+    m_Value: {x: -0.0056805233, y: -0.058470577, z: -0.00033265402, w: 0.9982729}
   m_Size:
-    m_Target: 1169.1853
+    m_Target: 1.6971292
     speed: 2
-    m_Value: 1169.1853
+    m_Value: 1.6971292
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -681,7 +680,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 2560, y: 1440}
+  m_TargetSize: {x: 1297, y: 616}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -696,10 +695,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -1280
-    m_HBaseRangeMax: 1280
-    m_VBaseRangeMin: -720
-    m_VBaseRangeMax: 720
+    m_HBaseRangeMin: -648.5
+    m_HBaseRangeMax: 648.5
+    m_VBaseRangeMin: -308
+    m_VBaseRangeMax: 308
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -708,7 +707,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -716,23 +715,23 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 0
+      y: 21
       width: 1297
-      height: 637
-    m_Scale: {x: 0.44236112, y: 0.44236112}
-    m_Translation: {x: 648.5, y: 318.5}
+      height: 616
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 648.5, y: 308}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1465.9968
-      y: -720
-      width: 2931.9937
-      height: 1440
+      x: -648.5
+      y: -308
+      width: 1297
+      height: 616
     m_MinimalGUI: 1
-  m_defaultScale: 0.44236112
+  m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1297, y: 637}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
