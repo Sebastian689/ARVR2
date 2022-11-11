@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &43192976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -526,10 +526,9 @@ GameObject:
   m_Component:
   - component: {fileID: 466157968}
   - component: {fileID: 466157963}
-  - component: {fileID: 466157967}
-  - component: {fileID: 466157966}
   - component: {fileID: 466157965}
   - component: {fileID: 466157964}
+  - component: {fileID: 466157966}
   m_Layer: 0
   m_Name: AR Camera
   m_TagString: MainCamera
@@ -547,7 +546,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BackGroundColor: {r: 0, g: 0.7771714, b: 0.8396226, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -620,17 +619,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 466157962}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e3c44306fb1e439a9f18b2212b8ab70, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a2a9c34df4095f47b9ca8f975175f5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!81 &466157967
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 466157962}
-  m_Enabled: 1
+  m_Device: 0
+  m_PoseSource: 6
+  m_PoseProviderComponent: {fileID: 0}
+  m_TrackingType: 0
+  m_UpdateType: 0
+  m_UseRelativeTransform: 0
 --- !u!4 &466157968
 Transform:
   m_ObjectHideFlags: 0
@@ -1340,7 +1337,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1955059723
 MonoBehaviour:
   m_ObjectHideFlags: 0
