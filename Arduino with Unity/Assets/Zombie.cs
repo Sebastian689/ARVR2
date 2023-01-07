@@ -5,8 +5,8 @@ using UnityEngine;
 public class Zombie : MonoBehaviour
 {
     Transform _followTarget;
-    float _speed = 2.0f;
-    //const float EPSILON = 0.1f;
+    float _speed = 1.0f;
+    const float EPSILON = 0.1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +18,7 @@ public class Zombie : MonoBehaviour
     {
         transform.LookAt(_followTarget);
 
-        //if((transform.position - _followTarget.position).magnitude > EPSILON)
-        transform.Translate(0.0f, 0.0f, _speed * Time.deltaTime);
+        if((transform.position - _followTarget.position).magnitude > EPSILON)
+            transform.Translate(0.0f, 0.0f, _speed * Time.deltaTime);
     }
 }

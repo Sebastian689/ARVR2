@@ -19,11 +19,13 @@ public class ZombieSpawner : MonoBehaviour
 
     void SpawnZombie()
     {
-        int xcount = Random.Range(30, 50);
-        int zcount = Random.Range(30, 50);
+        int xcount = Random.Range(10, 20);
+        int zcount = Random.Range(10, 20);
+        
 
         Vector3 position = new Vector3(xcount, 0, zcount);
 
         Instantiate(zombie, position, Quaternion.identity);
+        Invoke("SpawnZombie", 3);
     }
 }
