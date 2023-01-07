@@ -24,9 +24,9 @@ public class Player : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Zombie")
+        if (other.gameObject.tag == "Zombie")
         {
             Debug.Log("Collision");
             int i = Random.Range(11, 14);

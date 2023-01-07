@@ -19,8 +19,8 @@ public class ZombieSpawner : MonoBehaviour
 
     void SpawnZombie()
     {
-        int xcount = Random.Range(10, 20);
-        int zcount = Random.Range(10, 20);
+        int xcount = Random.Range(5, 10);
+        int zcount = Random.Range(5, 10);
         
 
         Vector3 position = new Vector3(xcount, 0, zcount);

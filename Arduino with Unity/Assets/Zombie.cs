@@ -10,12 +10,14 @@ public class Zombie : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _followTarget = GameObject.FindGameObjectWithTag("Player").transform;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        _followTarget = GameObject.FindGameObjectWithTag("Player").transform;
+
         transform.LookAt(_followTarget);
 
         if((transform.position - _followTarget.position).magnitude > EPSILON)
