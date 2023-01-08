@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Zombie : MonoBehaviour
 {
     Transform _followTarget;
     float _speed = 1.0f;
     const float EPSILON = 0.1f;
+    public TextMeshProUGUI debugText;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +19,7 @@ public class Zombie : MonoBehaviour
     void Update()
     {
         _followTarget = GameObject.FindGameObjectWithTag("Player").transform;
+        debugText.GetComponent<TextMeshProUGUI>().text = "Transform: " + _followTarget.position;
 
         transform.LookAt(_followTarget);
 
