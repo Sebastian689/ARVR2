@@ -18,7 +18,7 @@ public class Zombie : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _followTarget = GameObject.FindGameObjectWithTag("Player").transform;
+        _followTarget = GameObject.FindGameObjectWithTag("MainCamera").transform;
         debugText.GetComponent<TextMeshProUGUI>().text = "Transform: " + _followTarget.position;
 
         transform.LookAt(_followTarget);
