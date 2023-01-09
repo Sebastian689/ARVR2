@@ -7,19 +7,24 @@ public class Zombie : MonoBehaviour
 {
     Transform _followTarget;
     float _speed = 1.0f;
-    const float EPSILON = 0.1f;
+    const float EPSILON = 1.0f;
     public TextMeshProUGUI debugText;
+    public int hp = 50;
 
-    private Animation anim;
+    private Animator animator;
     // Start is called before the first frame update
     void Start()
     {
-        anim = gameObject.GetComponent<Animation>();
+        animator = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(hp <= 0){
+            StartCoroutine(DeadAnimation());
+        }
+
         _followTarget = GameObject.FindGameObjectWithTag("MainCamera").transform;
         debugText.GetComponent<TextMeshProUGUI>().text = "Transform: " + _followTarget.position;
 
@@ -33,14 +38,22 @@ public class Zombie : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player"){
-            this.anim.Play("Zombie");
+            animator.SetBool("isAttacking", true);
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
         if(other.gameObject.tag == "Player"){
-            this.anim.Play("Zombie");
+            animator.SetBool("isAttacking", false);
         }
+    }
+
+    IEnumerator DeadAnimation()
+    {
+        transform.position = new Vector3(transform.position.x, -1.5f, transform.position.z);
+        animator.SetBool("isUnalive", true);
+        yield return new WaitForSeconds(3.0f);
+        Destroy(gameObject);
     }
 }

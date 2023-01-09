@@ -578,7 +578,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &207886749
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1643,7 +1643,7 @@ GameObject:
   - component: {fileID: 853304673}
   m_Layer: 0
   m_Name: Collision
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1690,7 +1690,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.3
+  m_Radius: 0.7
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &853304673
 Rigidbody:
@@ -2336,7 +2336,7 @@ GameObject:
   - component: {fileID: 1862370671}
   m_Layer: 0
   m_Name: AR Session Origin
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2483,30 +2483,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 425254540309652006, guid: ed9a4070d4da57f4eb049e362b23344a, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 626820c2b4e59e54ab320e25edbd50ba, type: 2}
-    - target: {fileID: 425254540309652006, guid: ed9a4070d4da57f4eb049e362b23344a, type: 3}
-      propertyPath: m_UpdateMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 425254540318707142, guid: ed9a4070d4da57f4eb049e362b23344a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -8
-      objectReference: {fileID: 0}
-    - target: {fileID: 425254540318707142, guid: ed9a4070d4da57f4eb049e362b23344a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 425254540318707142, guid: ed9a4070d4da57f4eb049e362b23344a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 425254540318707142, guid: ed9a4070d4da57f4eb049e362b23344a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 425254540921340805, guid: ed9a4070d4da57f4eb049e362b23344a, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -2550,22 +2526,6 @@ PrefabInstance:
     - target: {fileID: 425254540921340805, guid: ed9a4070d4da57f4eb049e362b23344a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 425254540921340806, guid: ed9a4070d4da57f4eb049e362b23344a, type: 3}
-      propertyPath: m_Size.x
-      value: 3.7642329
-      objectReference: {fileID: 0}
-    - target: {fileID: 425254540921340806, guid: ed9a4070d4da57f4eb049e362b23344a, type: 3}
-      propertyPath: m_Size.y
-      value: 9.317817
-      objectReference: {fileID: 0}
-    - target: {fileID: 425254540921340806, guid: ed9a4070d4da57f4eb049e362b23344a, type: 3}
-      propertyPath: m_Center.x
-      value: 0.04216202
-      objectReference: {fileID: 0}
-    - target: {fileID: 425254540921340806, guid: ed9a4070d4da57f4eb049e362b23344a, type: 3}
-      propertyPath: m_Center.y
-      value: -3.601145
       objectReference: {fileID: 0}
     - target: {fileID: 425254540921340808, guid: ed9a4070d4da57f4eb049e362b23344a, type: 3}
       propertyPath: m_Name

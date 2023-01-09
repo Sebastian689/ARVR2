@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 425254540921340806}
   - component: {fileID: 425254540921340809}
   - component: {fileID: 1630309415}
+  - component: {fileID: 6695524521499866931}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Zombie
@@ -45,8 +46,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.3510185, y: 1, z: 1.5521019}
-  m_Center: {x: -0.0012335595, y: 0, z: 0.016974675}
+  m_Size: {x: 3.7642336, y: 9.317817, z: 3.9368706}
+  m_Center: {x: 0.04216202, y: -3.601145, z: 1.2093583}
 --- !u!114 &425254540921340809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76,6 +77,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &6695524521499866931
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425254540921340808}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 83df9562de1b27646afd2f8bfb8d8927, type: 3}
+  m_Controller: {fileID: 9100000, guid: 626820c2b4e59e54ab320e25edbd50ba, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &425254540319102790
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -117,7 +137,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 83df9562de1b27646afd2f8bfb8d8927, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 83df9562de1b27646afd2f8bfb8d8927, type: 3}
       propertyPath: m_LocalRotation.x
@@ -125,7 +145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 83df9562de1b27646afd2f8bfb8d8927, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 83df9562de1b27646afd2f8bfb8d8927, type: 3}
       propertyPath: m_LocalRotation.z
@@ -137,13 +157,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 83df9562de1b27646afd2f8bfb8d8927, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 83df9562de1b27646afd2f8bfb8d8927, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9500000, guid: 83df9562de1b27646afd2f8bfb8d8927, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 83df9562de1b27646afd2f8bfb8d8927, type: 3}
 --- !u!4 &425254540318707142 stripped
 Transform:
