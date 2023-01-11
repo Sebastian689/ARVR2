@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class MessageListener : MonoBehaviour
 {
+    public float damage = 10f;
+    public float range = 100f;
+
+    public Camera fpsCam;
+
     // Invoked when a line of data is received from the serial device.
     void OnMessageArrived(string msg)
     {
         if(msg=="1"){
             Debug.Log("Input");
+            PewPew();
         }
     }
 
@@ -18,5 +24,24 @@ public class MessageListener : MonoBehaviour
     void OnConnectionEvent(bool success)
     {
         Debug.Log("Connected");
+    }
+
+    private void Update()
+    {
+        if (Input.GetButtonDown("Fire1")) { PewPew(); }
+    }
+    void PewPew()
+    {
+        RaycastHit hit;
+            if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+        {
+            Debug.Log(hit.transform.name);
+
+            Zombie target = hit.transform.GetComponent<Zombie>();
+            if (target != null)
+            {
+                target.TakeDamage(damage);
+            }
+        }
     }
 }

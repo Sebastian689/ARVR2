@@ -9,7 +9,7 @@ public class Zombie : MonoBehaviour
     float _speed = 1.0f;
     const float EPSILON = 1.0f;
     public TextMeshProUGUI debugText;
-    public int hp = 50;
+    public float hp = 50;
 
     private Animator animator;
     // Start is called before the first frame update
@@ -54,6 +54,20 @@ public class Zombie : MonoBehaviour
         transform.position = new Vector3(transform.position.x, -1.5f, transform.position.z);
         animator.SetBool("isUnalive", true);
         yield return new WaitForSeconds(3.0f);
+        Destroy(gameObject);
+    }
+
+    public void TakeDamage(float amount)
+    {
+        hp -= amount;
+        if (hp <= 0f)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
         Destroy(gameObject);
     }
 }
