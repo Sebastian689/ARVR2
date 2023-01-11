@@ -8,7 +8,7 @@ public class Zombie : MonoBehaviour
     Transform _followTarget;
     float _speed = 1.0f;
     const float EPSILON = 1.0f;
-    public TextMeshProUGUI debugText;
+    //public TextMeshProUGUI debugText;
     public int hp = 50;
 
     private Animator animator;
@@ -26,7 +26,7 @@ public class Zombie : MonoBehaviour
         }
 
         _followTarget = GameObject.FindGameObjectWithTag("MainCamera").transform;
-        debugText.GetComponent<TextMeshProUGUI>().text = "Transform: " + _followTarget.position;
+        //debugText.GetComponent<TextMeshProUGUI>().text = "Transform: " + _followTarget.position;
 
         transform.LookAt(_followTarget);
 

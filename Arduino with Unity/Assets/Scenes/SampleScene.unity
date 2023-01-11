@@ -578,7 +578,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &207886749
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1334,6 +1334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc989b4f4d2d52444ab6bc240400a7f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debugText: {fileID: 207886750}
 --- !u!4 &466157968
 Transform:
   m_ObjectHideFlags: 0
@@ -2440,7 +2441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_PlanePrefab: {fileID: 4776765576899091622, guid: 4e5febf471aabb842ab35b8fa16d4ab2, type: 3}
-  m_DetectionMode: -1
+  m_DetectionMode: 0
 --- !u!1 &1955059722
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,14 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class MessageListener : MonoBehaviour
 {
+
+    public TextMeshProUGUI debugText;
+
+
     // Invoked when a line of data is received from the serial device.
     void OnMessageArrived(string msg)
     {
         if(msg=="1"){
             Debug.Log("Input");
+            debugText.GetComponent<TextMeshProUGUI>().text = "Shooting";
+        }
+        else if(msg=="0")
+        {
+            debugText.GetComponent<TextMeshProUGUI>().text = "Not shooting";
         }
     }
 
