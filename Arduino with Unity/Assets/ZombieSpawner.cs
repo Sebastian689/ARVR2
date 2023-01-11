@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class ZombieSpawner : MonoBehaviour
 {
+    public AudioSource zombieSpawneAudioSource;
+    public float repeatTimer = 32.0f;
+    float timer = 0;
+
     public GameObject zombie;
     // Start is called before the first frame update
     void Start()
@@ -14,7 +18,12 @@ public class ZombieSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        timer += Time.deltaTime;
+        if ( timer > repeatTimer)
+        {
+            zombieSpawneAudioSource.PlayOneShot(zombieSpawneAudioSource.clip);
+            timer = 0;
+        }
     }
 
     void SpawnZombie()
