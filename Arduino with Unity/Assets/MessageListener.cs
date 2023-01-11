@@ -8,6 +8,10 @@ public class MessageListener : MonoBehaviour
     public float range = 100f;
 
     public Camera fpsCam;
+    public GameObject impact;
+    public CameraShake shake;
+
+
 
     // Invoked when a line of data is received from the serial device.
     void OnMessageArrived(string msg)
@@ -32,6 +36,7 @@ public class MessageListener : MonoBehaviour
     }
     void PewPew()
     {
+        StartCoroutine(shake.Shake(.15f, .4f));
         RaycastHit hit;
             if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
@@ -42,6 +47,9 @@ public class MessageListener : MonoBehaviour
             {
                 target.TakeDamage(damage);
             }
+
+            GameObject ImpactGO = Instantiate(impact, hit.point, Quaternion.LookRotation(hit.normal));
+            Destroy(ImpactGO, 1f);
         }
     }
 }
