@@ -12,7 +12,7 @@ public class MessageListener : MonoBehaviour
     public GameObject impact;
     public CameraShake shake;
 
-
+    public AudioSource gunShot;
 
 
     public TextMeshProUGUI debugText;
@@ -24,6 +24,7 @@ public class MessageListener : MonoBehaviour
         if(msg=="1"){
             Debug.Log("Input");
             PewPew();
+            gunShot.PlayOneShot(gunShot.clip);
             debugText.GetComponent<TextMeshProUGUI>().text = "Shooting";
         }
         else if(msg=="0")
