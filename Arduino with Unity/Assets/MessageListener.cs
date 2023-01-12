@@ -5,6 +5,15 @@ using TMPro;
 
 public class MessageListener : MonoBehaviour
 {
+    public float damage = 10f;
+    public float range = 100f;
+
+    public Camera fpsCam;
+    public GameObject impact;
+    public CameraShake shake;
+
+
+
 
     public TextMeshProUGUI debugText;
 
@@ -14,6 +23,7 @@ public class MessageListener : MonoBehaviour
     {
         if(msg=="1"){
             Debug.Log("Input");
+            PewPew();
             debugText.GetComponent<TextMeshProUGUI>().text = "Shooting";
         }
         else if(msg=="0")
@@ -28,5 +38,28 @@ public class MessageListener : MonoBehaviour
     void OnConnectionEvent(bool success)
     {
         Debug.Log("Connected");
+    }
+
+    private void Update()
+    {
+        if (Input.GetButtonDown("Fire1")) { PewPew(); }
+    }
+    void PewPew()
+    {
+        StartCoroutine(shake.Shake(.15f, .4f));
+        RaycastHit hit;
+            if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+        {
+            Debug.Log(hit.transform.name);
+
+            Zombie target = hit.transform.GetComponent<Zombie>();
+            if (target != null)
+            {
+                target.TakeDamage(damage);
+            }
+
+            GameObject ImpactGO = Instantiate(impact, hit.point, Quaternion.LookRotation(hit.normal));
+            Destroy(ImpactGO, 1f);
+        }
     }
 }
